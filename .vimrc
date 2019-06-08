@@ -1,0 +1,118 @@
+""
+"" Basic Setup
+""
+
+set nocompatible      " Use vim, no vi defaults
+set nonumber          " Show line numbers
+set ruler             " Show line and column number
+syntax enable         " Turn on syntax highlighting allowing local overrides
+set encoding=utf-8    " Set default encoding to UTF-8
+set ttyfast
+set lazyredraw
+set autoread
+
+""
+"" Whitespace
+""
+
+set nowrap                        " don't wrap lines
+set tabstop=2                     " a tab is two spaces
+set shiftwidth=2                  " an autoindent (with <<) is two spaces
+set expandtab                     " use spaces, not tabs
+set list                          " Show invisible characters
+set backspace=indent,eol,start    " backspace through everything in insert mode
+
+if exists("g:enable_mvim_shift_arrow")
+  let macvim_hig_shift_movement = 1 " mvim shift-arrow-keys
+endif
+
+" List chars
+set listchars=""                  " Reset the listchars
+set listchars=tab:\ \             " a tab should display as "  ", trailing whitespace as "."
+set listchars+=trail:.            " show trailing spaces as dots
+set listchars+=extends:>          " The character to show in the last column when wrap is
+                                  " off and the line continues beyond the right of the screen
+set listchars+=precedes:<         " The character to show in the last column when wrap is
+                                  " off and the line continues beyond the left of the screen
+
+""
+"" Searching
+""
+
+set nohlsearch    " highlight matches
+set noincsearch   " incremental searching
+set ignorecase  " searches are case insensitive...
+set smartcase   " ... unless they contain at least one capital letter
+set nocindent
+
+""
+"" Wild settings
+""
+
+" set wildmode=list:longest,list:full
+
+" Disable output and VCS files
+set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
+
+" Disable archive files
+set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
+
+" Ignore bundler and sass cache
+set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
+
+" Disable temp and backup files
+set wildignore+=*.swp,*~,._*
+
+""
+"" Backup and swap files
+""
+
+set backupdir^=~/.vim/_backup//    " where to put backup files.
+set directory^=~/.vim/_temp//      " where to put swap files.
+
+" Don't use Ex mode, use Q for formatting
+map Q gq
+
+if has("statusline") && !&cp
+ set laststatus=2  " always show the status bar
+
+ " Start the status line
+ set statusline=%f\ %m\ %r
+ set statusline+=Line:%l/%L[%p%%]
+ set statusline+=Col:%v
+ set statusline+=Buf:#%n
+ set statusline+=[%b][0x%B]
+endif
+
+"" Customizations
+
+let g:netrw_banner=0        " disable annoying banner
+let g:netrw_browse_split=4  " open in prior window
+let g:netrw_altv=1          " open splits to the right
+let g:netrw_liststyle=3     " tree view
+let g:netrw_list_hide=netrw_gitignore#Hide()
+let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+
+"" set path+=**
+set gfn=BitstreamVeraSansMono-Roman:h12
+set guifont=BitstreamVeraSansMono-Roman:h12
+" set Vim-specific sequences for RGB colors
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+colo blue
+"" NerdTree
+nmap <C-n> :NERDTreeToggle<CR>
+"" IndentLine
+let g:indentLine_enabled = 0
+"" fzf
+nmap _ :Files<CR>
+" diff before save
+nnoremap <C-x> :w !diff  % -<CR>
+" yank everything to clipboard
+nnoremap <C-p> :%y+<CR>
+" bad habits to stop
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
