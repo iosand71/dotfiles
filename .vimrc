@@ -107,26 +107,51 @@ set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 colo blue
+
 "" NerdTree
 nmap <C-n> :NERDTreeToggle<CR>
+
 "" IndentLine
 let g:indentLine_enabled = 0
+
 "" fzf
 nmap _ :Files<CR>
+
 " diff before save
 nnoremap <C-x> :w !diff  % -<CR>
+
 " yank everything to clipboard
 nnoremap <C-p> :%y+<CR>
+
 " bad habits to stop
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
 " Better split switching (Ctrl-j, Ctrl-k, Ctrl-h, Ctrl-l) {{{
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-H> <C-W>h
 map <C-L> <C-W>l
+" split moving
+nnoremap <M-h> <C-w>H
+nnoremap <M-j> <C-w>J
+nnoremap <M-k> <C-w>K
+nnoremap <M-l> <C-w>L
+
 " Switch between the last two files
 nnoremap <Leader><Leader> <C-^>
 
+" Reindent all file
+nnoremap <leader>gf gg=G``zz
+
+" Marks should go to the column, not just the line. Why isn't this the default?
+nnoremap ' `
+
+" edit last fie
+nmap <Leader>e :e#<CR>
+
+" Emacs-like bindings in insert mode
+imap <C-e> <C-o>$
+imap <C-a> <C-o>0
