@@ -11,6 +11,9 @@ set ttyfast
 set lazyredraw
 set autoread
 
+" Leader
+let mapleader = " "
+
 ""
 "" Whitespace
 ""
@@ -21,6 +24,9 @@ set shiftwidth=2                  " an autoindent (with <<) is two spaces
 set expandtab                     " use spaces, not tabs
 set list                          " Show invisible characters
 set backspace=indent,eol,start    " backspace through everything in insert mode
+set noerrorbells
+set visualbell
+set scrolloff=3
 
 if exists("g:enable_mvim_shift_arrow")
   let macvim_hig_shift_movement = 1 " mvim shift-arrow-keys
@@ -116,3 +122,11 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+" Better split switching (Ctrl-j, Ctrl-k, Ctrl-h, Ctrl-l) {{{
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-H> <C-W>h
+map <C-L> <C-W>l
+" Switch between the last two files
+nnoremap <Leader><Leader> <C-^>
+
