@@ -47,9 +47,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export ANT_HOME=/Users/andrea.iosio/Java/ant
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 export ANDROID_HOME=/Users/andrea.iosio/Unix/android
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/andrea.iosio/Projects/play-1.2.5:${ANT_HOME}/bin:/usr/local/mysql/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 #export LC_CTYPE=it_IT.UTF-8
