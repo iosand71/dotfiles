@@ -20,6 +20,8 @@ alias ev='echo $* | bc -l'
 alias df='df -h'
 alias dus='du -cah | sort -h'
 alias gowallpaper='cd Library/Containers/com.yesthisisjoe.Wallpaperer/Data/Library/Application\ Support/Wallpaperer/Wallpapers/'
+alias kctl='kubectl'
+source <(kubectl completion zsh)
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -41,8 +43,10 @@ alias gowallpaper='cd Library/Containers/com.yesthisisjoe.Wallpaperer/Data/Libra
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx encode64 fasd vi-mode)
-
+plugins=(git osx encode64 fasd vi-mode kube-ps1)
+if (( ! ${fpath[(I)/usr/local/share/zsh/site-functions]} )); then
+  FPATH=/usr/local/share/zsh/site-functions:$FPATH
+fi
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
@@ -53,6 +57,7 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 #export LC_CTYPE=it_IT.UTF-8
 #export LC_ALL=it_IT.UTF-8
+export KUBECONFIG=~/.kube/config:~/.kube/config-shared-eks
 export LANG=it_IT.UTF-8
 export PATH=/usr/local/texlive/2015basic/bin/universal-darwin:$PATH
 export PATH=/usr/texbin:$PATH
