@@ -48,7 +48,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export ANT_HOME=/Users/andrea.iosio/Java/ant
 export ANDROID_HOME=/Users/andrea.iosio/Unix/android
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:/snap/bin:$(go env GOPATH)/bin
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 #export LC_CTYPE=it_IT.UTF-8
@@ -94,3 +94,6 @@ bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
 # 10ms for key sequences
 KEYTIMEOUT=1
+source <(kubectl completion zsh)
+alias kctl=kubectl
+complete -F __start_kubectl kctl
