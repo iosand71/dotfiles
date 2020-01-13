@@ -20,7 +20,7 @@ alias ev='echo $* | bc -l'
 alias df='df -h'
 alias dus='du -cah | sort -h'
 alias gowallpaper='cd Library/Containers/com.yesthisisjoe.Wallpaperer/Data/Library/Application\ Support/Wallpaperer/Wallpapers/'
-alias kctl='kubectl'
+alias kc='kubectl'
 source <(kubectl completion zsh)
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
