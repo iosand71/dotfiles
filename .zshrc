@@ -20,7 +20,7 @@ alias ev='echo $* | bc -l'
 alias df='df -h'
 alias dus='du -cah | sort -h'
 alias gowallpaper='cd Library/Containers/com.yesthisisjoe.Wallpaperer/Data/Library/Application\ Support/Wallpaperer/Wallpapers/'
-alias kctl='kubectl'
+alias kc='kubectl'
 source <(kubectl completion zsh)
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -62,10 +62,9 @@ export LANG=it_IT.UTF-8
 export PATH=/usr/local/texlive/2015basic/bin/universal-darwin:$PATH
 export PATH=/usr/texbin:$PATH
 export NVM_DIR="$HOME/.nvm" 
-. "/usr/local/opt/nvm/nvm.sh"
 unsetopt nomatch
 # Jenv
-eval "$(jenv init -)"
+# eval "$(jenv init -)"
 # iTerm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
@@ -100,5 +99,5 @@ bindkey '^[[F' end-of-line
 # 10ms for key sequences
 KEYTIMEOUT=1
 source <(kubectl completion zsh)
-alias kctl=kubectl
-complete -F __start_kubectl kctl
+complete -F __start_kubectl kc
+source ${HOME}/.zprofile
