@@ -61,6 +61,7 @@ export KUBECONFIG=~/.kube/config:~/.kube/config-shared-eks
 export LANG=it_IT.UTF-8
 export PATH=/usr/local/texlive/2015basic/bin/universal-darwin:$PATH
 export PATH=/usr/texbin:$PATH
+export PATH=~/.local/bin:$PATH
 export NVM_DIR="$HOME/.nvm" 
 unsetopt nomatch
 # Jenv
@@ -101,3 +102,9 @@ KEYTIMEOUT=1
 source <(kubectl completion zsh)
 complete -F __start_kubectl kc
 source ${HOME}/.zprofile
+# NVM
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh" ] && . "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm" 
+# FZF
+source /usr/share/doc/fzf/examples/key-bindings.zsh
