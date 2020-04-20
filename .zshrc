@@ -21,6 +21,10 @@ alias df='df -h'
 alias dus='du -cah | sort -h'
 alias gowallpaper='cd Library/Containers/com.yesthisisjoe.Wallpaperer/Data/Library/Application\ Support/Wallpaperer/Wallpapers/'
 alias kc='kubectl'
+alias kga='kc get all'
+alias kgp='kc get pods'
+alias kgs='kc get svc'
+source ~/.aliases
 source <(kubectl completion zsh)
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -57,8 +61,10 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 #export LC_CTYPE=it_IT.UTF-8
 #export LC_ALL=it_IT.UTF-8
-export KUBECONFIG=~/.kube/config:~/.kube/config-shared-eks
+export KUBECONFIG=~/.kube/config:~/.kube/config-shared-eks:~/.kube/config-assimoco-eks:~/.kube/config-credem-eks:~/.kube/config-credemvita-eks
+export KUBECONFIG=~/.kube/config-amissima-eks:$KUBECONFIG
 export LANG=it_IT.UTF-8
+export PAGER=bat
 export PATH=/usr/local/texlive/2015basic/bin/universal-darwin:$PATH
 export PATH=/usr/texbin:$PATH
 export NVM_DIR="$HOME/.nvm" 
