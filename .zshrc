@@ -22,6 +22,10 @@ alias dus='du -cah | sort -h'
 alias gowallpaper='cd Library/Containers/com.yesthisisjoe.Wallpaperer/Data/Library/Application\ Support/Wallpaperer/Wallpapers/'
 alias kc='kubectl'
 source <(kubectl completion zsh)
+alias df='pydf'
+alias less='bat -p'
+alias top='htop'
+alias open='xdg-open'
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
