@@ -10,20 +10,6 @@ ZSH_THEME="frisk"
 # Example aliases
 # alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="vim ~/.oh-my-zsh"
-alias rr='ls -tr'
-alias rrl='ls -ltr'
-alias lsdim='ls -lSr'
-alias biggest='ls -l | sort -k 5 -g | less'
-alias latest="find . -type f -printf '%T@ %P\n' | sort -n | awk '{print $1}' | tail -1"
-alias bc='bc -l'
-alias ev='echo $* | bc -l'
-alias df='df -h'
-alias dus='du -cah | sort -h'
-alias gowallpaper='cd Library/Containers/com.yesthisisjoe.Wallpaperer/Data/Library/Application\ Support/Wallpaperer/Wallpapers/'
-alias kc='kubectl'
-alias kga='kc get all'
-alias kgp='kc get pods'
-alias kgs='kc get svc'
 source ~/.aliases
 source <(kubectl completion zsh)
 # Set to this to use case-sensitive completion
