@@ -10,18 +10,8 @@ ZSH_THEME="frisk"
 # Example aliases
 # alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="vim ~/.oh-my-zsh"
-alias rr='ls -tr'
-alias rrl='ls -ltr'
-alias lsdim='ls -lSr'
-alias biggest='ls -l | sort -k 5 -g | less'
-alias latest="find . -type f -printf '%T@ %P\n' | sort -n | awk '{print $1}' | tail -1"
-alias bc='bc -l'
-alias ev='echo $* | bc -l'
-alias df='df -h'
-alias dus='du -cah | sort -h'
-alias gowallpaper='cd Library/Containers/com.yesthisisjoe.Wallpaperer/Data/Library/Application\ Support/Wallpaperer/Wallpapers/'
-alias kc='kubectl'
 source <(kubectl completion zsh)
+source ~/.aliases
 alias df='pydf'
 alias less='bat -p'
 alias top='htop'
@@ -66,6 +56,7 @@ export LANG=it_IT.UTF-8
 export PATH=/usr/local/texlive/2015basic/bin/universal-darwin:$PATH
 export PATH=/usr/texbin:$PATH
 export PATH=~/.local/bin:$PATH
+export PATH=~/.cargo/bin:$PATH
 export NVM_DIR="$HOME/.nvm" 
 unsetopt nomatch
 # Jenv
