@@ -157,5 +157,5 @@ imap <C-e> <C-o>$
 imap <C-a> <C-o>0
 
 " notational fzf vim
-let g:nv_search_paths = ['~/Dropbox/Notes', 'notes.md' ]
+let g:nv_search_paths = ['~/Library/Application Support/Notational Data', '~/Dropbox/Notes', 'notes.md' ]
 nnoremap <silent> <c-x> :NV<CR>
