@@ -14,3 +14,5 @@ alias gwlogs='awslogs get eks/shared-eks-cluster/containers --profile=gateway --
 alias nodepods='kubectl get pods --sort-by="{.spec.nodeName}" -o custom-columns="NAME:.metadata.name,NODE:.spec.nodeName,NAMESPACE:.metadata.namespace"'
 alias less='bat -p'
 alias ls='exa'
+alias lsn='exa -lsnewest'
+alias lsb='ls -lssize'
