@@ -118,7 +118,7 @@ let g:indentLine_enabled = 0
 nmap _ :Files<CR>
 
 " diff before save
-nnoremap <C-d> :w !diff  % -<CR>
+nnoremap <C-x> :w !diff  % -<CR>
 
 " yank everything to clipboard
 nnoremap <C-p> :%y+<CR>
@@ -158,4 +158,4 @@ imap <C-a> <C-o>0
 
 " notational fzf vim
 let g:nv_search_paths = ['~/Dropbox/Notes', 'notes.md' ]
-nnoremap <silent> <c-x> :NV<CR>
+nnoremap <silent> <c-f> :NV<CR>
