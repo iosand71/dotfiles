@@ -1,0 +1,26 @@
+" mimicking midnight commander
+" by Petteri Knihti
+
+highlight clear
+
+highlight Win         cterm=none    ctermfg=yellow    ctermbg=darkblue
+ 
+highlight CurrLine    cterm=none    ctermfg=black    ctermbg=blue
+highlight Selected    cterm=bold    ctermfg=yellow   ctermbg=default
+ 
+highlight TopLine     cterm=none    ctermfg=black    ctermbg=blue
+highlight TopLineSel  cterm=bold    ctermfg=yellow   ctermbg=blue
+highlight StatusLine  cterm=bold    ctermfg=black    ctermbg=blue
+highlight Border      cterm=none    ctermfg=none     ctermbg=blue
+ 
+highlight WildMenu    cterm=reverse ctermfg=black    ctermbg=yellow
+highlight CmdLine     cterm=none    ctermfg=yellow    ctermbg=black
+highlight ErrorMsg    cterm=none    ctermfg=red      ctermbg=black
+ 
+highlight Directory   cterm=bold    ctermfg=blue     ctermbg=default
+highlight Link        cterm=bold    ctermfg=yellow   ctermbg=default
+highlight BrokenLink  cterm=bold    ctermfg=red      ctermbg=default
+highlight Socket      cterm=bold    ctermfg=magenta  ctermbg=default
+highlight Device      cterm=bold    ctermfg=red      ctermbg=default
+highlight Fifo        cterm=bold    ctermfg=blue     ctermbg=default
+highlight Executable  cterm=bold    ctermfg=green    ctermbg=default
