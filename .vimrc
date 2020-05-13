@@ -134,6 +134,9 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-H> <C-W>h
 map <C-L> <C-W>l
+nnoremap <leader>v <C-w>v<C-w>l
+nnoremap <leader>s <C-w>s
+nnoremap <leader>vsa :vert sba<CR>
 " split moving
 nnoremap <M-h> <C-w>H
 nnoremap <M-j> <C-w>J
@@ -161,4 +164,5 @@ let g:nv_search_paths = ['~/Library/Application Support/Notational Data', '~/Dro
 nnoremap <silent> <c-f> :NV<CR>
 
 " undotree
+let g:undotree_WindowLayout = 2
 nnoremap <F5> :UndotreeToggle<cr>
