@@ -159,3 +159,6 @@ imap <C-a> <C-o>0
 " notational fzf vim
 let g:nv_search_paths = ['~/Library/Application Support/Notational Data', '~/Dropbox/Notes', 'notes.md' ]
 nnoremap <silent> <c-f> :NV<CR>
+
+" undotree
+nnoremap <F5> :UndotreeToggle<cr>
