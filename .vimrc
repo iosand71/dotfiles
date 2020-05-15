@@ -172,3 +172,12 @@ nnoremap <F5> :UndotreeToggle<cr>
 nmap <leader>gh :diffget //3<CR>
 nmap <leader>gl :diffget //2<CR>
 nmap <leader>gs :G<CR>
+let g:lightline = {
+                  \ 'active': {
+                  \   'left': [ [ 'mode', 'paste' ],
+                  \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+                  \ },
+                  \ 'component_function': {
+                  \   'gitbranch': 'FugitiveHead'
+                  \ },
+                  \ }
