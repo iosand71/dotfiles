@@ -167,3 +167,8 @@ nnoremap <silent> <c-f> :NV<CR>
 " undotree
 let g:undotree_WindowLayout = 2
 nnoremap <F5> :UndotreeToggle<cr>
+
+" fugitive
+nmap <leader>gh :diffget //3<CR>
+nmap <leader>gl :diffget //2<CR>
+nmap <leader>gs :G<CR>

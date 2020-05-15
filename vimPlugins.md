@@ -13,3 +13,4 @@
 - typescript-vim
 - vim-prettier
 - vim-surround
+- vim-fugitive
