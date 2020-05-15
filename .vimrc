@@ -161,6 +161,7 @@ imap <C-a> <C-o>0
 
 " notational fzf vim
 let g:nv_search_paths = ['~/Library/Application Support/Notational Data', '~/Dropbox/Notes', 'notes.md' ]
+let g:nv_default_extension = '.txt'
 nnoremap <silent> <c-f> :NV<CR>
 
 " undotree
