@@ -3,7 +3,6 @@
 - fzf-main
 - lightline
 - modern-borland
-- scratch.vim
 - undotree
 - vim-rzip
 - fzf
