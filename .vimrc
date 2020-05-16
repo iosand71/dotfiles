@@ -139,6 +139,10 @@ nnoremap <M-h> <C-w>H
 nnoremap <M-j> <C-w>J
 nnoremap <M-k> <C-w>K
 nnoremap <M-l> <C-w>L
+nnoremap <leader>v <C-w>v<C-w>l
+nnoremap <leader>s <C-w>s
+nnoremap <leader>vsa :vert sba<CR>
+
 
 " Switch between the last two files
 nnoremap <Leader><Leader> <C-^>
@@ -159,3 +163,21 @@ imap <C-a> <C-o>0
 " notational fzf vim
 let g:nv_search_paths = ['~/Dropbox/Notes', 'notes.md' ]
 nnoremap <silent> <c-f> :NV<CR>
+
+" undotree
+let g:undotree_WindowLayout = 2
+nnoremap <F5> :UndotreeToggle<cr>
+
+" fugitive
+nmap <leader>gh :diffget //3<CR>
+nmap <leader>gl :diffget //2<CR>
+nmap <leader>gs :G<CR>
+let g:lightline = {
+                  \ 'active': {
+                  \   'left': [ [ 'mode', 'paste' ],
+                  \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+                  \ },
+                  \ 'component_function': {
+                  \   'gitbranch': 'FugitiveHead'
+                  \ },
+                  \ }
