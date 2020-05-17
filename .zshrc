@@ -16,6 +16,8 @@ alias df='pydf'
 alias less='bat -p'
 alias top='htop'
 alias open='xdg-open'
+# set caps lock to escape
+setxkbmap -option caps:escape
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
