@@ -159,6 +159,9 @@ nmap <Leader>e :e#<CR>
 imap <C-e> <C-o>$
 imap <C-a> <C-o>0
 
+" Fast save 
+nnoremap <Leader>z :w<CR>
+
 " notational fzf vim
 let g:nv_search_paths = ['~/Library/Application Support/Notational Data', '~/Dropbox/Notes', 'notes.md' ]
 let g:nv_default_extension = '.txt'
