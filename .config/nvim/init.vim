@@ -7,6 +7,9 @@ call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
+" gruvbox color scheme
+color gruvbox
+
 " TextEdit might fail if hidden is not set.
 set hidden
 " Some servers have issues with backup files, see #649.
