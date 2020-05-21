@@ -134,14 +134,15 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-H> <C-W>h
 map <C-L> <C-W>l
-nnoremap <leader>v <C-w>v<C-w>l
-nnoremap <leader>s <C-w>s
-nnoremap <leader>vsa :vert sba<CR>
 " split moving
 nnoremap <M-h> <C-w>H
 nnoremap <M-j> <C-w>J
 nnoremap <M-k> <C-w>K
 nnoremap <M-l> <C-w>L
+nnoremap <leader>v <C-w>v<C-w>l
+nnoremap <leader>s <C-w>s
+nnoremap <leader>vsa :vert sba<CR>
+
 
 " Switch between the last two files
 nnoremap <Leader><Leader> <C-^>
@@ -155,23 +156,31 @@ nnoremap ' `
 " edit last fie
 nmap <Leader>e :e#<CR>
 
+" number and relative numbers
+nnoremap <F6> :set number! relativenumber!<CR>
+
 " Emacs-like bindings in insert mode
 imap <C-e> <C-o>$
 imap <C-a> <C-o>0
 
-" Fast save 
+" Fast save
 nnoremap <Leader>z :w<CR>
 
+"
 " notational fzf vim
 let g:nv_search_paths = ['~/Library/Application Support/Notational Data', '~/Dropbox/Notes', 'notes.md' ]
 let g:nv_default_extension = '.txt'
 nnoremap <silent> <c-f> :NV<CR>
 
+"
 " undotree
+"
 let g:undotree_WindowLayout = 2
-nnoremap <F5> :UndotreeToggle<cr>
+nnoremap <F5> :UndotreeToggle<CR>
 
+"
 " fugitive
+"
 nmap <leader>gh :diffget //3<CR>
 nmap <leader>gl :diffget //2<CR>
 nmap <leader>gs :G<CR>

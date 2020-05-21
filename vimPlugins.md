@@ -9,7 +9,7 @@
 - markdown-preview
 - nerdtree
 - notational-fzf-vim
-- typescript-vim
 - vim-prettier
 - vim-surround
 - vim-fugitive
+- vim-repeat
