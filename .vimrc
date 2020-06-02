@@ -175,6 +175,9 @@ nnoremap <silent> <c-f> :NV<CR>
 let g:undotree_WindowLayout = 2
 nnoremap <F5> :UndotreeToggle<CR>
 
+" Fast save
+nnoremap <Leader>z :w<CR>
+
 "
 " fugitive
 "
