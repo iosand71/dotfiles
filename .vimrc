@@ -157,6 +157,7 @@ nnoremap ' `
 nmap <Leader>e :e#<CR>
 
 " number and relative numbers
+set number relativenumber
 nnoremap <F6> :set number! relativenumber!<CR>
 
 " Emacs-like bindings in insert mode
