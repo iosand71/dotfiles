@@ -1,15 +1,18 @@
 # Current vim plugins
 
-- fzf-main
-- lightline
+- blue-mood
+- gruvbox
 - modern-borland
-- undotree
-- vim-rzip
+- lightline
+- fzf-main
 - fzf
-- markdown-preview.nvim
-- nerdtree
 - notational-fzf-vim
-- vim-prettier
-- vim-surround
+- markdown-preview *
+- coc *l
+- undotree
 - vim-fugitive
+- vim-prettier
 - vim-repeat
+- vim-rzip
+- vim-surround
+- vim-vinegar
