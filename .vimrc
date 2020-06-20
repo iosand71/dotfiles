@@ -96,6 +96,8 @@ let g:netrw_banner=0        " disable annoying banner
 let g:netrw_browse_split=4  " open in prior window
 let g:netrw_altv=1          " open splits to the right
 let g:netrw_liststyle=3     " tree view
+let g:netrw_winsize = 25    " split size
+let g:netrw_preview = 1     " vertical previews
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
@@ -108,8 +110,8 @@ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 colo blue
 
-"" NerdTree
-nmap <C-n> :NERDTreeToggle<CR>
+"" File explorer
+nmap <C-n> :Lexp<CR>
 
 "" IndentLine
 let g:indentLine_enabled = 0
@@ -142,7 +144,7 @@ nnoremap <M-l> <C-w>L
 nnoremap <leader>v <C-w>v<C-w>l
 nnoremap <leader>s <C-w>s
 nnoremap <leader>vsa :vert sba<CR>
-
+nnoremap <leader>o :only<CR>
 
 " Switch between the last two files
 nnoremap <Leader><Leader> <C-^>
@@ -157,6 +159,7 @@ nnoremap ' `
 nmap <Leader>e :e#<CR>
 
 " number and relative numbers
+set number relativenumber
 nnoremap <F6> :set number! relativenumber!<CR>
 
 " Emacs-like bindings in insert mode
@@ -193,3 +196,9 @@ let g:lightline = {
                   \   'gitbranch': 'FugitiveHead'
                   \ },
                   \ }
+"
+" Current date
+"
+:nnoremap <F7> "=strftime("%c")<CR>P
+:inoremap <F7> <C-R>=strftime("%c")<CR>
+:iab <expr> dts strftime("%c") " %d/%m/%y %H:%M:%S

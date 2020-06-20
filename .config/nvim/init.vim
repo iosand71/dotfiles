@@ -5,6 +5,7 @@ source ~/.vimrc
 call plug#begin()
 " Use release branch (Recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 call plug#end()
 
 " gruvbox color scheme

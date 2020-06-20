@@ -11,7 +11,6 @@ ZSH_THEME="frisk"
 # alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="vim ~/.oh-my-zsh"
 source ~/.aliases
-source <(kubectl completion zsh)
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -47,8 +46,14 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 #export LC_CTYPE=it_IT.UTF-8
 #export LC_ALL=it_IT.UTF-8
-export KUBECONFIG=~/.kube/config:~/.kube/config-shared-eks:~/.kube/config-assimoco-eks:~/.kube/config-credem-eks:~/.kube/config-credemvita-eks
+export KUBECONFIG=~/.kube/config:~/.kube/config-shared-eks:~/.kube/config-credemvita-eks
 export KUBECONFIG=~/.kube/config-amissima-eks:~/.kube/config-amissima-prod-eks:~/.kube/config-global-eks:$KUBECONFIG
+export KUBECONFIG=~/.kube/config-assimoco-eks:~/.kube/config-assimoco-prod-eks:$KUBECONFIG
+export KUBECONFIG=~/.kube/config-bene-eks:$KUBECONFIG
+export KUBECONFIG=~/.kube/config-uca-eks:$KUBECONFIG
+export KUBECONFIG=~/.kube/config-andie-eks:$KUBECONFIG
+export KUBECONFIG=~/.kube/config-bap-eks:$KUBECONFIG
+export KUBECONFIG=~/.kube/config-credem-eks:~/.kube/config-credem-prod-eks:$KUBECONFIG
 export LANG=it_IT.UTF-8
 export PAGER=bat
 export PATH=/usr/local/texlive/2015basic/bin/universal-darwin:$PATH
@@ -94,3 +99,8 @@ KEYTIMEOUT=1
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_COMPLETION_TRIGGER='**'
+
+# Kubectl completion
+source <(kubectl completion zsh)
+# java home
+export JAVA_HOME=/Users/andrea.iosio/.jenv/versions/1.8

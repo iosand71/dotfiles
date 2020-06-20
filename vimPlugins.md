@@ -6,7 +6,7 @@
 - undotree
 - vim-rzip
 - fzf
-- markdown-preview
+- markdown-preview.nvim
 - nerdtree
 - notational-fzf-vim
 - vim-prettier
