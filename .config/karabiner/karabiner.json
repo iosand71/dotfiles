@@ -18,7 +18,7 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Change left_alt + a to accented",
+                                "description": "Change left_alt + a to grave",
                                 "from": {
                                     "key_code": "a",
                                     "modifiers": {
@@ -45,7 +45,7 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Change left_alt + e to accented",
+                                "description": "Change left_alt + e to grave",
                                 "from": {
                                     "key_code": "e",
                                     "modifiers": {
@@ -100,7 +100,7 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Change left_alt + i to accented",
+                                "description": "Change left_alt + i to grave",
                                 "from": {
                                     "key_code": "i",
                                     "modifiers": {
@@ -127,7 +127,7 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Change left_alt + o to accented",
+                                "description": "Change left_alt + o to grave",
                                 "from": {
                                     "key_code": "o",
                                     "modifiers": {
@@ -154,7 +154,7 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Change left_alt + u to accented",
+                                "description": "Change left_alt + u to grave",
                                 "from": {
                                     "key_code": "u",
                                     "modifiers": {
