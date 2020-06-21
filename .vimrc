@@ -142,6 +142,7 @@ nnoremap <M-l> <C-w>L
 nnoremap <leader>v <C-w>v<C-w>l
 nnoremap <leader>s <C-w>s
 nnoremap <leader>vsa :vert sba<CR>
+nnoremap <leader>o :only<CR>
 
 
 " Switch between the last two files
@@ -182,8 +183,8 @@ nnoremap <Leader>z :w<CR>
 "
 " fugitive
 "
-nmap <leader>gh :diffget //2<CR>
-nmap <leader>gl :diffget //3<CR>
+nmap <leader>gh :diffget //3<CR>
+nmap <leader>gl :diffget //2<CR>
 nmap <leader>gs :G<CR>
 let g:lightline = {
                   \ 'active': {
@@ -194,3 +195,9 @@ let g:lightline = {
                   \   'gitbranch': 'FugitiveHead'
                   \ },
                   \ }
+"
+" Current date
+"
+:nnoremap <F7> "=strftime("%c")<CR>P
+:inoremap <F7> <C-R>=strftime("%c")<CR>
+:iab <expr> dts strftime("%c") " %d/%m/%y %H:%M:%S
