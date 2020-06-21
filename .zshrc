@@ -105,3 +105,7 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm" 
 # FZF
 source /usr/share/doc/fzf/examples/key-bindings.zsh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/andrea/.sdkman"
+[[ -s "/home/andrea/.sdkman/bin/sdkman-init.sh" ]] && source "/home/andrea/.sdkman/bin/sdkman-init.sh"
