@@ -46,14 +46,15 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 #export LC_CTYPE=it_IT.UTF-8
 #export LC_ALL=it_IT.UTF-8
-export KUBECONFIG=~/.kube/config:~/.kube/config-shared-eks:~/.kube/config-credemvita-eks
+export KUBECONFIG=~/.kube/config:~/.kube/config-shared-eks
+export KUBECONFIG=~/.kube/config-credem-eks:~/.kube/config-credem-prod-eks:$KUBECONFIG
+export KUBECONFIG=~/.kube/config-credemvita-eks:~/.kube/config-credemvita-prod-eks:$KUBECONFIG
 export KUBECONFIG=~/.kube/config-amissima-eks:~/.kube/config-amissima-prod-eks:~/.kube/config-global-eks:$KUBECONFIG
 export KUBECONFIG=~/.kube/config-assimoco-eks:~/.kube/config-assimoco-prod-eks:$KUBECONFIG
 export KUBECONFIG=~/.kube/config-bene-eks:$KUBECONFIG
-export KUBECONFIG=~/.kube/config-uca-eks:$KUBECONFIG
+export KUBECONFIG=~/.kube/config-uca-eks:~/.kube/config-uca-prod-eks:$KUBECONFIG
 export KUBECONFIG=~/.kube/config-andie-eks:$KUBECONFIG
 export KUBECONFIG=~/.kube/config-bap-eks:$KUBECONFIG
-export KUBECONFIG=~/.kube/config-credem-eks:~/.kube/config-credem-prod-eks:$KUBECONFIG
 export LANG=it_IT.UTF-8
 export PAGER=bat
 export PATH=/usr/local/texlive/2015basic/bin/universal-darwin:$PATH
@@ -104,3 +105,5 @@ export FZF_COMPLETION_TRIGGER='**'
 source <(kubectl completion zsh)
 # java home
 export JAVA_HOME=/Users/andrea.iosio/.jenv/versions/1.8
+
+source /Users/andrea.iosio/Library/Preferences/org.dystroy.broot/launcher/bash/br
