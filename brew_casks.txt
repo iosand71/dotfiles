@@ -1,0 +1,9 @@
+adoptopenjdk
+adoptopenjdk11
+adoptopenjdk8
+alacritty
+aws-vault
+java
+julia
+qlmarkdown
+rectangle
