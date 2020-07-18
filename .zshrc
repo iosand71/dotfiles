@@ -109,3 +109,5 @@ source /usr/share/doc/fzf/examples/key-bindings.zsh
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/andrea/.sdkman"
 [[ -s "/home/andrea/.sdkman/bin/sdkman-init.sh" ]] && source "/home/andrea/.sdkman/bin/sdkman-init.sh"
+
+source /home/andrea/.config/broot/launcher/bash/br
