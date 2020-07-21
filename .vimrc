@@ -183,8 +183,8 @@ nnoremap <F5> :UndotreeToggle<CR>
 "
 " fugitive
 "
-nmap <leader>gh :diffget //3<CR>
-nmap <leader>gl :diffget //2<CR>
+nmap <leader>gh :diffget //2<CR>
+nmap <leader>gl :diffget //3<CR>
 nmap <leader>gs :G<CR>
 let g:lightline = {
                   \ 'active': {

@@ -20,3 +20,4 @@ alias less='bat -p'
 alias ls='exa'
 alias lsn='exa -lsnewest'
 alias lsb='ls -lssize'
+function getcol() { awk "{print \$${1:-1}}"; }
