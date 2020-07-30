@@ -8,7 +8,7 @@
 - fzf
 - notational-fzf-vim
 - markdown-preview *
-- coc *l
+- coc
 - undotree
 - vim-fugitive
 - vim-prettier
@@ -16,3 +16,4 @@
 - vim-rzip
 - vim-surround
 - vim-vinegar
+- vim-dispatch

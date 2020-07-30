@@ -168,6 +168,10 @@ imap <C-a> <C-o>0
 " Fast save
 nnoremap <Leader>z :w<CR>
 
+" Dispatch config
+autocmd FileType java let b:dispatch = 'javac %'
+autocmd FileType python let b:dispatch = 'python3 %'
+
 "
 " notational fzf vim
 let g:nv_search_paths = ['~/Library/Application Support/Notational Data', '~/Dropbox/Notes', 'notes.md' ]

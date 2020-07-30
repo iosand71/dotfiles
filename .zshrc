@@ -104,7 +104,5 @@ export FZF_COMPLETION_TRIGGER='**'
 
 # Kubectl completion
 source <(kubectl completion zsh)
-# java home
-export JAVA_HOME=/Users/andrea.iosio/.jenv/versions/1.8
 
 source /Users/andrea.iosio/Library/Preferences/org.dystroy.broot/launcher/bash/br
