@@ -1,13 +1,16 @@
 ack
 
+adoptopenjdk
+
+adoptopenjdk/openjdk/adoptopenjdk11
+
+adoptopenjdk8
+
+alacritty
+
 ansible
 ├── libyaml
 ├── openssl@1.1
-├── gdbm
-├── readline
-├── sqlite
-│   └── readline
-├── xz
 └── python@3.8
     ├── gdbm
     ├── openssl@1.1
@@ -17,37 +20,26 @@ ansible
     └── xz
 
 aws-cfn-tools
-├── openjdk
-└── ec2-api-tools
-    └── openjdk
+├── ec2-api-tools
+│   └── openjdk
+└── openjdk
 
 aws-iam-authenticator
 
 aws-keychain
 
 aws-shell
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
-├── python@3.8
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   └── xz
-└── libyaml
+└── python@3.8
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
+
+aws-vault
 
 awscli
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
 └── python@3.8
     ├── gdbm
     ├── openssl@1.1
@@ -57,12 +49,6 @@ awscli
     └── xz
 
 awslogs
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
 └── python@3.8
     ├── gdbm
     ├── openssl@1.1
@@ -73,51 +59,9 @@ awslogs
 
 bat
 
-broot
+bdw-gc
 
-cairo
-├── libpng
-├── freetype
-│   └── libpng
-├── fontconfig
-│   ├── libpng
-│   └── freetype
-│       └── libpng
-├── gettext
-├── libffi
-├── pcre
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
-├── python@3.8
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   └── xz
-├── glib
-│   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   └── python@3.8
-│       ├── gdbm
-│       ├── openssl@1.1
-│       ├── readline
-│       ├── sqlite
-│       │   └── readline
-│       └── xz
-├── lzo
-└── pixman
+broot
 
 calc
 └── readline
@@ -130,6 +74,8 @@ coreutils
 
 cscope
 
+ctop
+
 cwlogs
 
 dep
@@ -137,8 +83,7 @@ dep
 
 dive
 
-e2fsprogs
-└── gettext
+dust
 
 ec2-api-tools
 └── openjdk
@@ -149,13 +94,6 @@ weaveworks/tap/eksctl
 
 exa
 
-ext2fuse
-├── gettext
-└── e2fsprogs
-    └── gettext
-
-ext4fuse
-
 fasd
 
 fd
@@ -163,49 +101,18 @@ fd
 fish
 └── pcre2
 
-fontconfig
-├── libpng
-└── freetype
-    └── libpng
-
-freetype
-└── libpng
-
-fribidi
-
 fzf
-
-gd
-├── libpng
-├── freetype
-│   └── libpng
-├── fontconfig
-│   ├── libpng
-│   └── freetype
-│       └── libpng
-├── jpeg
-├── libtiff
-│   └── jpeg
-└── webp
-    ├── jpeg
-    ├── libpng
-    └── libtiff
-        └── jpeg
 
 gdbm
 
 gettext
 
+gabrie30/utils/ghorg
+
 glib
 ├── gettext
 ├── libffi
 ├── pcre
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
 └── python@3.8
     ├── gdbm
     ├── openssl@1.1
@@ -218,24 +125,27 @@ gmp
 
 gnutls
 ├── gmp
-├── gettext
-├── libunistring
+├── guile
+│   ├── bdw-gc
+│   ├── gmp
+│   ├── libffi
+│   ├── libtool
+│   ├── libunistring
+│   ├── pkg-config
+│   └── readline
 ├── libidn2
 │   ├── gettext
 │   └── libunistring
 ├── libtasn1
+├── libunistring
 ├── nettle
 │   └── gmp
-├── libffi
 ├── p11-kit
 │   └── libffi
-├── openssl@1.1
-├── libevent
-│   └── openssl@1.1
 └── unbound
-    ├── openssl@1.1
-    └── libevent
-        └── openssl@1.1
+    ├── libevent
+    │   └── openssl@1.1
+    └── openssl@1.1
 
 go
 
@@ -244,578 +154,14 @@ gradle
 
 graphite2
 
-graphviz
-├── libpng
-├── freetype
-│   └── libpng
-├── fontconfig
-│   ├── libpng
-│   └── freetype
-│       └── libpng
-├── jpeg
-├── libtiff
-│   └── jpeg
-├── webp
-│   ├── jpeg
-│   ├── libpng
-│   └── libtiff
-│       └── jpeg
-├── gd
-│   ├── libpng
-│   ├── freetype
-│   │   └── libpng
-│   ├── fontconfig
-│   │   ├── libpng
-│   │   └── freetype
-│   │       └── libpng
-│   ├── jpeg
-│   ├── libtiff
-│   │   └── jpeg
-│   └── webp
-│       ├── jpeg
-│       ├── libpng
-│       └── libtiff
-│           └── jpeg
-├── gettext
+guile
+├── bdw-gc
+├── gmp
 ├── libffi
-├── pcre
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
-├── python@3.8
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   └── xz
-├── glib
-│   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   └── python@3.8
-│       ├── gdbm
-│       ├── openssl@1.1
-│       ├── readline
-│       ├── sqlite
-│       │   └── readline
-│       └── xz
-├── jasper
-│   └── jpeg
-├── netpbm
-│   ├── jpeg
-│   ├── jasper
-│   │   └── jpeg
-│   ├── libpng
-│   └── libtiff
-│       └── jpeg
-├── gts
-│   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   ├── python
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   └── xz
-│   ├── glib
-│   │   ├── gettext
-│   │   ├── libffi
-│   │   ├── pcre
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   ├── xz
-│   │   └── python@3.8
-│   │       ├── gdbm
-│   │       ├── openssl@1.1
-│   │       ├── readline
-│   │       ├── sqlite
-│   │       │   └── readline
-│   │       └── xz
-│   ├── jpeg
-│   ├── jasper
-│   │   └── jpeg
-│   ├── libpng
-│   ├── libtiff
-│   │   └── jpeg
-│   └── netpbm
-│       ├── jpeg
-│       ├── jasper
-│       │   └── jpeg
-│       ├── libpng
-│       └── libtiff
-│           └── jpeg
 ├── libtool
-├── lzo
-├── pixman
-├── cairo
-│   ├── libpng
-│   ├── freetype
-│   │   └── libpng
-│   ├── fontconfig
-│   │   ├── libpng
-│   │   └── freetype
-│   │       └── libpng
-│   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   ├── python@3.8
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   └── xz
-│   ├── glib
-│   │   ├── gettext
-│   │   ├── libffi
-│   │   ├── pcre
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   ├── xz
-│   │   └── python@3.8
-│   │       ├── gdbm
-│   │       ├── openssl@1.1
-│   │       ├── readline
-│   │       ├── sqlite
-│   │       │   └── readline
-│   │       └── xz
-│   ├── lzo
-│   └── pixman
-├── fribidi
-├── graphite2
-├── icu4c
-├── harfbuzz
-│   ├── libpng
-│   ├── freetype
-│   │   └── libpng
-│   ├── fontconfig
-│   │   ├── libpng
-│   │   └── freetype
-│   │       └── libpng
-│   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   ├── python@3.8
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   └── xz
-│   ├── glib
-│   │   ├── gettext
-│   │   ├── libffi
-│   │   ├── pcre
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   ├── xz
-│   │   └── python@3.8
-│   │       ├── gdbm
-│   │       ├── openssl@1.1
-│   │       ├── readline
-│   │       ├── sqlite
-│   │       │   └── readline
-│   │       └── xz
-│   ├── lzo
-│   ├── pixman
-│   ├── cairo
-│   │   ├── libpng
-│   │   ├── freetype
-│   │   │   └── libpng
-│   │   ├── fontconfig
-│   │   │   ├── libpng
-│   │   │   └── freetype
-│   │   │       └── libpng
-│   │   ├── gettext
-│   │   ├── libffi
-│   │   ├── pcre
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   ├── xz
-│   │   ├── python@3.8
-│   │   │   ├── gdbm
-│   │   │   ├── openssl@1.1
-│   │   │   ├── readline
-│   │   │   ├── sqlite
-│   │   │   │   └── readline
-│   │   │   └── xz
-│   │   ├── glib
-│   │   │   ├── gettext
-│   │   │   ├── libffi
-│   │   │   ├── pcre
-│   │   │   ├── gdbm
-│   │   │   ├── openssl@1.1
-│   │   │   ├── readline
-│   │   │   ├── sqlite
-│   │   │   │   └── readline
-│   │   │   ├── xz
-│   │   │   └── python@3.8
-│   │   │       ├── gdbm
-│   │   │       ├── openssl@1.1
-│   │   │       ├── readline
-│   │   │       ├── sqlite
-│   │   │       │   └── readline
-│   │   │       └── xz
-│   │   ├── lzo
-│   │   └── pixman
-│   ├── graphite2
-│   └── icu4c
-└── pango
-    ├── libpng
-    ├── freetype
-    │   └── libpng
-    ├── fontconfig
-    │   ├── libpng
-    │   └── freetype
-    │       └── libpng
-    ├── gettext
-    ├── libffi
-    ├── pcre
-    ├── gdbm
-    ├── openssl@1.1
-    ├── readline
-    ├── sqlite
-    │   └── readline
-    ├── xz
-    ├── python@3.8
-    │   ├── gdbm
-    │   ├── openssl@1.1
-    │   ├── readline
-    │   ├── sqlite
-    │   │   └── readline
-    │   └── xz
-    ├── glib
-    │   ├── gettext
-    │   ├── libffi
-    │   ├── pcre
-    │   ├── gdbm
-    │   ├── openssl@1.1
-    │   ├── readline
-    │   ├── sqlite
-    │   │   └── readline
-    │   ├── xz
-    │   └── python@3.8
-    │       ├── gdbm
-    │       ├── openssl@1.1
-    │       ├── readline
-    │       ├── sqlite
-    │       │   └── readline
-    │       └── xz
-    ├── lzo
-    ├── pixman
-    ├── cairo
-    │   ├── libpng
-    │   ├── freetype
-    │   │   └── libpng
-    │   ├── fontconfig
-    │   │   ├── libpng
-    │   │   └── freetype
-    │   │       └── libpng
-    │   ├── gettext
-    │   ├── libffi
-    │   ├── pcre
-    │   ├── gdbm
-    │   ├── openssl@1.1
-    │   ├── readline
-    │   ├── sqlite
-    │   │   └── readline
-    │   ├── xz
-    │   ├── python@3.8
-    │   │   ├── gdbm
-    │   │   ├── openssl@1.1
-    │   │   ├── readline
-    │   │   ├── sqlite
-    │   │   │   └── readline
-    │   │   └── xz
-    │   ├── glib
-    │   │   ├── gettext
-    │   │   ├── libffi
-    │   │   ├── pcre
-    │   │   ├── gdbm
-    │   │   ├── openssl@1.1
-    │   │   ├── readline
-    │   │   ├── sqlite
-    │   │   │   └── readline
-    │   │   ├── xz
-    │   │   └── python@3.8
-    │   │       ├── gdbm
-    │   │       ├── openssl@1.1
-    │   │       ├── readline
-    │   │       ├── sqlite
-    │   │       │   └── readline
-    │   │       └── xz
-    │   ├── lzo
-    │   └── pixman
-    ├── fribidi
-    ├── graphite2
-    ├── icu4c
-    └── harfbuzz
-        ├── libpng
-        ├── freetype
-        │   └── libpng
-        ├── fontconfig
-        │   ├── libpng
-        │   └── freetype
-        │       └── libpng
-        ├── gettext
-        ├── libffi
-        ├── pcre
-        ├── gdbm
-        ├── openssl@1.1
-        ├── readline
-        ├── sqlite
-        │   └── readline
-        ├── xz
-        ├── python@3.8
-        │   ├── gdbm
-        │   ├── openssl@1.1
-        │   ├── readline
-        │   ├── sqlite
-        │   │   └── readline
-        │   └── xz
-        ├── glib
-        │   ├── gettext
-        │   ├── libffi
-        │   ├── pcre
-        │   ├── gdbm
-        │   ├── openssl@1.1
-        │   ├── readline
-        │   ├── sqlite
-        │   │   └── readline
-        │   ├── xz
-        │   └── python@3.8
-        │       ├── gdbm
-        │       ├── openssl@1.1
-        │       ├── readline
-        │       ├── sqlite
-        │       │   └── readline
-        │       └── xz
-        ├── lzo
-        ├── pixman
-        ├── cairo
-        │   ├── libpng
-        │   ├── freetype
-        │   │   └── libpng
-        │   ├── fontconfig
-        │   │   ├── libpng
-        │   │   └── freetype
-        │   │       └── libpng
-        │   ├── gettext
-        │   ├── libffi
-        │   ├── pcre
-        │   ├── gdbm
-        │   ├── openssl@1.1
-        │   ├── readline
-        │   ├── sqlite
-        │   │   └── readline
-        │   ├── xz
-        │   ├── python@3.8
-        │   │   ├── gdbm
-        │   │   ├── openssl@1.1
-        │   │   ├── readline
-        │   │   ├── sqlite
-        │   │   │   └── readline
-        │   │   └── xz
-        │   ├── glib
-        │   │   ├── gettext
-        │   │   ├── libffi
-        │   │   ├── pcre
-        │   │   ├── gdbm
-        │   │   ├── openssl@1.1
-        │   │   ├── readline
-        │   │   ├── sqlite
-        │   │   │   └── readline
-        │   │   ├── xz
-        │   │   └── python@3.8
-        │   │       ├── gdbm
-        │   │       ├── openssl@1.1
-        │   │       ├── readline
-        │   │       ├── sqlite
-        │   │       │   └── readline
-        │   │       └── xz
-        │   ├── lzo
-        │   └── pixman
-        ├── graphite2
-        └── icu4c
-
-gts
-├── gettext
-├── libffi
-├── pcre
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
-├── python
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   └── xz
-├── glib
-│   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   └── python@3.8
-│       ├── gdbm
-│       ├── openssl@1.1
-│       ├── readline
-│       ├── sqlite
-│       │   └── readline
-│       └── xz
-├── jpeg
-├── jasper
-│   └── jpeg
-├── libpng
-├── libtiff
-│   └── jpeg
-└── netpbm
-    ├── jpeg
-    ├── jasper
-    │   └── jpeg
-    ├── libpng
-    └── libtiff
-        └── jpeg
-
-harfbuzz
-├── libpng
-├── freetype
-│   └── libpng
-├── fontconfig
-│   ├── libpng
-│   └── freetype
-│       └── libpng
-├── gettext
-├── libffi
-├── pcre
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
-├── python@3.8
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   └── xz
-├── glib
-│   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   └── python@3.8
-│       ├── gdbm
-│       ├── openssl@1.1
-│       ├── readline
-│       ├── sqlite
-│       │   └── readline
-│       └── xz
-├── lzo
-├── pixman
-├── cairo
-│   ├── libpng
-│   ├── freetype
-│   │   └── libpng
-│   ├── fontconfig
-│   │   ├── libpng
-│   │   └── freetype
-│   │       └── libpng
-│   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   ├── python@3.8
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   └── xz
-│   ├── glib
-│   │   ├── gettext
-│   │   ├── libffi
-│   │   ├── pcre
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   ├── xz
-│   │   └── python@3.8
-│   │       ├── gdbm
-│   │       ├── openssl@1.1
-│   │       ├── readline
-│   │       ├── sqlite
-│   │       │   └── readline
-│   │       └── xz
-│   ├── lzo
-│   └── pixman
-├── graphite2
-└── icu4c
+├── libunistring
+├── pkg-config
+└── readline
 
 helm
 
@@ -826,12 +172,6 @@ htslib
 └── xz
 
 httpie
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
 └── python@3.8
     ├── gdbm
     ├── openssl@1.1
@@ -848,6 +188,8 @@ isl
 jasper
 └── jpeg
 
+java
+
 jemalloc
 
 jenv
@@ -856,6 +198,8 @@ jpeg
 
 jq
 └── oniguruma
+
+julia
 
 derailed/k9s/k9s
 
@@ -872,15 +216,14 @@ kubectx
 
 kubernetes-cli
 
+kubespy
+
 kustomize
+
+lazydocker
 
 ldns
 ├── openssl@1.1
-├── gdbm
-├── readline
-├── sqlite
-│   └── readline
-├── xz
 └── python@3.8
     ├── gdbm
     ├── openssl@1.1
@@ -919,9 +262,9 @@ libmpc
 libpng
 
 libpq
-├── openssl@1.1
-└── krb5
-    └── openssl@1.1
+├── krb5
+│   └── openssl@1.1
+└── openssl@1.1
 
 libssh
 └── openssl@1.1
@@ -966,13 +309,8 @@ lzo
 
 macvim
 ├── cscope
+├── gettext
 ├── lua
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
 ├── python@3.8
 │   ├── gdbm
 │   ├── openssl@1.1
@@ -980,7 +318,6 @@ macvim
 │   ├── sqlite
 │   │   └── readline
 │   └── xz
-├── libyaml
 └── ruby
     ├── libyaml
     ├── openssl@1.1
@@ -994,6 +331,7 @@ maven
 mdcat
 
 mongodb/brew/mongodb-community
+└── mongodb-database-tools
 
 moreutils
 
@@ -1012,18 +350,18 @@ ncurses
 
 neovim
 ├── gettext
-├── unibilium
 ├── libtermkey
 │   └── unibilium
 ├── libuv
 ├── libvterm
 ├── luajit
-└── msgpack
+├── msgpack
+└── unibilium
 
 netpbm
-├── jpeg
 ├── jasper
 │   └── jpeg
+├── jpeg
 ├── libpng
 └── libtiff
     └── jpeg
@@ -1042,9 +380,6 @@ nspr
 nss
 └── nspr
 
-ntfs-3g
-└── gettext
-
 nvm
 
 oniguruma
@@ -1053,7 +388,6 @@ openjdk
 
 openjpeg
 ├── libpng
-├── jpeg
 ├── libtiff
 │   └── jpeg
 └── little-cms2
@@ -1062,33 +396,13 @@ openjpeg
         └── jpeg
 
 openshift-cli
-├── openssl
-├── readline
 └── socat
     ├── openssl@1.1
     └── readline
 
 openssh
-├── openssl@1.1
-├── gdbm
-├── readline
-├── sqlite
-│   └── readline
-├── xz
-├── python@3.8
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   └── xz
 ├── ldns
 │   ├── openssl@1.1
-│   ├── gdbm
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
 │   └── python@3.8
 │       ├── gdbm
 │       ├── openssl@1.1
@@ -1096,10 +410,10 @@ openssh
 │       ├── sqlite
 │       │   └── readline
 │       └── xz
-├── libcbor
-└── libfido2
-    ├── libcbor
-    └── openssl@1.1
+├── libfido2
+│   ├── libcbor
+│   └── openssl@1.1
+└── openssl@1.1
 
 openssl@1.1
 
@@ -1110,184 +424,6 @@ p7zip
 
 pandoc
 
-pango
-├── libpng
-├── freetype
-│   └── libpng
-├── fontconfig
-│   ├── libpng
-│   └── freetype
-│       └── libpng
-├── gettext
-├── libffi
-├── pcre
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
-├── python@3.8
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   └── xz
-├── glib
-│   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   └── python@3.8
-│       ├── gdbm
-│       ├── openssl@1.1
-│       ├── readline
-│       ├── sqlite
-│       │   └── readline
-│       └── xz
-├── lzo
-├── pixman
-├── cairo
-│   ├── libpng
-│   ├── freetype
-│   │   └── libpng
-│   ├── fontconfig
-│   │   ├── libpng
-│   │   └── freetype
-│   │       └── libpng
-│   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   ├── python@3.8
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   └── xz
-│   ├── glib
-│   │   ├── gettext
-│   │   ├── libffi
-│   │   ├── pcre
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   ├── xz
-│   │   └── python@3.8
-│   │       ├── gdbm
-│   │       ├── openssl@1.1
-│   │       ├── readline
-│   │       ├── sqlite
-│   │       │   └── readline
-│   │       └── xz
-│   ├── lzo
-│   └── pixman
-├── fribidi
-├── graphite2
-├── icu4c
-└── harfbuzz
-    ├── libpng
-    ├── freetype
-    │   └── libpng
-    ├── fontconfig
-    │   ├── libpng
-    │   └── freetype
-    │       └── libpng
-    ├── gettext
-    ├── libffi
-    ├── pcre
-    ├── gdbm
-    ├── openssl@1.1
-    ├── readline
-    ├── sqlite
-    │   └── readline
-    ├── xz
-    ├── python@3.8
-    │   ├── gdbm
-    │   ├── openssl@1.1
-    │   ├── readline
-    │   ├── sqlite
-    │   │   └── readline
-    │   └── xz
-    ├── glib
-    │   ├── gettext
-    │   ├── libffi
-    │   ├── pcre
-    │   ├── gdbm
-    │   ├── openssl@1.1
-    │   ├── readline
-    │   ├── sqlite
-    │   │   └── readline
-    │   ├── xz
-    │   └── python@3.8
-    │       ├── gdbm
-    │       ├── openssl@1.1
-    │       ├── readline
-    │       ├── sqlite
-    │       │   └── readline
-    │       └── xz
-    ├── lzo
-    ├── pixman
-    ├── cairo
-    │   ├── libpng
-    │   ├── freetype
-    │   │   └── libpng
-    │   ├── fontconfig
-    │   │   ├── libpng
-    │   │   └── freetype
-    │   │       └── libpng
-    │   ├── gettext
-    │   ├── libffi
-    │   ├── pcre
-    │   ├── gdbm
-    │   ├── openssl@1.1
-    │   ├── readline
-    │   ├── sqlite
-    │   │   └── readline
-    │   ├── xz
-    │   ├── python@3.8
-    │   │   ├── gdbm
-    │   │   ├── openssl@1.1
-    │   │   ├── readline
-    │   │   ├── sqlite
-    │   │   │   └── readline
-    │   │   └── xz
-    │   ├── glib
-    │   │   ├── gettext
-    │   │   ├── libffi
-    │   │   ├── pcre
-    │   │   ├── gdbm
-    │   │   ├── openssl@1.1
-    │   │   ├── readline
-    │   │   ├── sqlite
-    │   │   │   └── readline
-    │   │   ├── xz
-    │   │   └── python@3.8
-    │   │       ├── gdbm
-    │   │       ├── openssl@1.1
-    │   │       ├── readline
-    │   │       ├── sqlite
-    │   │       │   └── readline
-    │   │       └── xz
-    │   ├── lzo
-    │   └── pixman
-    ├── graphite2
-    └── icu4c
-
 pcre
 
 pcre2
@@ -1295,18 +431,11 @@ pcre2
 peco
 
 pgcli
-├── openssl@1.1
-├── krb5
-│   └── openssl@1.1
 ├── libpq
-│   ├── openssl@1.1
-│   └── krb5
-│       └── openssl@1.1
-├── gdbm
-├── readline
-├── sqlite
-│   └── readline
-├── xz
+│   ├── krb5
+│   │   └── openssl@1.1
+│   └── openssl@1.1
+├── openssl@1.1
 └── python@3.8
     ├── gdbm
     ├── openssl@1.1
@@ -1319,118 +448,20 @@ pixman
 
 pkg-config
 
-poppler
-├── libpng
-├── freetype
-│   └── libpng
-├── fontconfig
-│   ├── libpng
-│   └── freetype
-│       └── libpng
-├── gettext
-├── libffi
-├── pcre
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
-├── python@3.8
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   └── xz
-├── glib
-│   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   └── python@3.8
-│       ├── gdbm
-│       ├── openssl@1.1
-│       ├── readline
-│       ├── sqlite
-│       │   └── readline
-│       └── xz
-├── lzo
-├── pixman
-├── cairo
-│   ├── libpng
-│   ├── freetype
-│   │   └── libpng
-│   ├── fontconfig
-│   │   ├── libpng
-│   │   └── freetype
-│   │       └── libpng
-│   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   ├── python@3.8
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   └── xz
-│   ├── glib
-│   │   ├── gettext
-│   │   ├── libffi
-│   │   ├── pcre
-│   │   ├── gdbm
-│   │   ├── openssl@1.1
-│   │   ├── readline
-│   │   ├── sqlite
-│   │   │   └── readline
-│   │   ├── xz
-│   │   └── python@3.8
-│   │       ├── gdbm
-│   │       ├── openssl@1.1
-│   │       ├── readline
-│   │       ├── sqlite
-│   │       │   └── readline
-│   │       └── xz
-│   ├── lzo
-│   └── pixman
-├── jpeg
-├── libtiff
-│   └── jpeg
-├── little-cms2
-│   ├── jpeg
-│   └── libtiff
-│       └── jpeg
-├── nspr
-├── nss
-│   └── nspr
-├── openjpeg
-│   ├── libpng
-│   ├── jpeg
-│   ├── libtiff
-│   │   └── jpeg
-│   └── little-cms2
-│       ├── jpeg
-│       └── libtiff
-│           └── jpeg
-└── qt
+poetry
+└── python@3.8
+    ├── gdbm
+    ├── openssl@1.1
+    ├── readline
+    ├── sqlite
+    │   └── readline
+    └── xz
 
 postgresql
 ├── icu4c
-├── openssl@1.1
 ├── krb5
 │   └── openssl@1.1
+├── openssl@1.1
 └── readline
 
 python@3.8
@@ -1441,14 +472,20 @@ python@3.8
 │   └── readline
 └── xz
 
+qlmarkdown
+
 qt
 
 ranger
 
 readline
 
+rectangle
+
 ripgrep
 └── pcre2
+
+robo-3t
 
 ruby
 ├── libyaml
@@ -1456,12 +493,10 @@ ruby
 └── readline
 
 samtools
-├── xz
 └── htslib
     └── xz
 
 sloc
-├── icu4c
 └── node
     └── icu4c
 
@@ -1470,12 +505,6 @@ socat
 └── readline
 
 sphinx-doc
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
 └── python@3.8
     ├── gdbm
     ├── openssl@1.1
@@ -1489,158 +518,32 @@ sqlite
 
 ssdeep
 
-sshfs
-├── gettext
-├── libffi
-├── pcre
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
-├── python
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   └── xz
-└── glib
-    ├── gettext
-    ├── libffi
-    ├── pcre
-    ├── gdbm
-    ├── openssl@1.1
-    ├── readline
-    ├── sqlite
-    │   └── readline
-    ├── xz
-    └── python@3.8
-        ├── gdbm
-        ├── openssl@1.1
-        ├── readline
-        ├── sqlite
-        │   └── readline
-        └── xz
+stern
 
 task
-├── gmp
-├── gettext
-├── libunistring
-├── libidn2
-│   ├── gettext
-│   └── libunistring
-├── libtasn1
-├── nettle
-│   └── gmp
-├── libffi
-├── p11-kit
-│   └── libffi
-├── openssl@1.1
-├── libevent
-│   └── openssl@1.1
-├── unbound
-│   ├── openssl@1.1
-│   └── libevent
-│       └── openssl@1.1
 └── gnutls
     ├── gmp
-    ├── gettext
-    ├── libunistring
+    ├── guile
+    │   ├── bdw-gc
+    │   ├── gmp
+    │   ├── libffi
+    │   ├── libtool
+    │   ├── libunistring
+    │   ├── pkg-config
+    │   └── readline
     ├── libidn2
     │   ├── gettext
     │   └── libunistring
     ├── libtasn1
+    ├── libunistring
     ├── nettle
     │   └── gmp
-    ├── libffi
     ├── p11-kit
     │   └── libffi
-    ├── openssl@1.1
-    ├── libevent
-    │   └── openssl@1.1
     └── unbound
-        ├── openssl@1.1
-        └── libevent
-            └── openssl@1.1
-
-datawire/blackbird/telepresence
-├── gdbm
-├── openssl@1.1
-├── readline
-├── sqlite
-│   └── readline
-├── xz
-├── python
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   └── xz
-├── torsocks
-├── gettext
-├── libffi
-├── pcre
-├── python@3.8
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   └── xz
-├── glib
-│   ├── gettext
-│   ├── libffi
-│   ├── pcre
-│   ├── gdbm
-│   ├── openssl@1.1
-│   ├── readline
-│   ├── sqlite
-│   │   └── readline
-│   ├── xz
-│   └── python@3.8
-│       ├── gdbm
-│       ├── openssl@1.1
-│       ├── readline
-│       ├── sqlite
-│       │   └── readline
-│       └── xz
-└── sshfs
-    ├── gettext
-    ├── libffi
-    ├── pcre
-    ├── gdbm
-    ├── openssl@1.1
-    ├── readline
-    ├── sqlite
-    │   └── readline
-    ├── xz
-    ├── python
-    │   ├── gdbm
-    │   ├── openssl@1.1
-    │   ├── readline
-    │   ├── sqlite
-    │   │   └── readline
-    │   └── xz
-    └── glib
-        ├── gettext
-        ├── libffi
-        ├── pcre
-        ├── gdbm
-        ├── openssl@1.1
-        ├── readline
-        ├── sqlite
-        │   └── readline
-        ├── xz
-        └── python@3.8
-            ├── gdbm
-            ├── openssl@1.1
-            ├── readline
-            ├── sqlite
-            │   └── readline
-            └── xz
+        ├── libevent
+        │   └── openssl@1.1
+        └── openssl@1.1
 
 telnet
 
@@ -1659,7 +562,6 @@ tig
 └── readline
 
 tmux
-├── openssl@1.1
 ├── libevent
 │   └── openssl@1.1
 ├── ncurses
@@ -1670,15 +572,17 @@ torsocks
 tree
 
 unbound
-├── openssl@1.1
-└── libevent
-    └── openssl@1.1
+├── libevent
+│   └── openssl@1.1
+└── openssl@1.1
 
 unibilium
 
 utf8proc
 
 vifm
+
+visual-studio-code
 
 webp
 ├── jpeg
@@ -1687,8 +591,6 @@ webp
     └── jpeg
 
 wget
-├── gettext
-├── libunistring
 ├── libidn2
 │   ├── gettext
 │   └── libunistring
@@ -1699,7 +601,6 @@ xctool
 xz
 
 yafc
-├── openssl@1.1
 ├── libssh
 │   └── openssl@1.1
 └── readline
@@ -1707,7 +608,6 @@ yafc
 yank
 
 yarn
-├── icu4c
 └── node
     └── icu4c
 

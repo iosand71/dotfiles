@@ -7,3 +7,5 @@ java
 julia
 qlmarkdown
 rectangle
+robo-3t
+visual-studio-code
