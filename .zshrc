@@ -96,8 +96,10 @@ bindkey -a "^[[3~" delete-char
 bindkey "^[[3~" delete-char
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
+# bindkey '^j' vi-cmd-mode
+bindkey -M viins jj vi-cmd-mode
 # 10ms for key sequences
-KEYTIMEOUT=1
+KEYTIMEOUT=100
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_COMPLETION_TRIGGER='**'

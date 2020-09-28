@@ -205,3 +205,7 @@ let g:lightline = {
 :nnoremap <F7> "=strftime("%c")<CR>P
 :inoremap <F7> <C-R>=strftime("%c")<CR>
 :iab <expr> dts strftime("%c") " %d/%m/%y %H:%M:%S
+"
+" Alternative to pressing ESC
+"
+inoremap jj <ESC>

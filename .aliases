@@ -28,4 +28,5 @@ alias less='bat -p'
 alias ls='exa'
 alias lsn='exa -lsnewest'
 alias lsb='ls -lssize'
+alias k9sr='k9s --readonly'
 function getcol() { awk "{print \$${1:-1}}"; }
