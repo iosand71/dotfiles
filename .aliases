@@ -21,6 +21,8 @@ alias kgd='kc get deploy'
 alias krr='kc rollout restart'
 alias kced='kc edit'
 alias kcgi='kc get pods --all-namespaces -o jsonpath={..image} |tr -s '\''[[:space:]]'\'' '\''\n'\'' |sort |uniq -c'
+alias ktop='kc top pod --sort-by=cpu | head'
+alias ktopm='kc top pod --sort-by=memory | head'
 alias jqp="jq -R 'fromjson? | select(type == \"object\")'"
 alias gwlogs='awslogs get eks/shared-eks-cluster/containers --profile=gateway --aws-region=eu-central-1'
 alias nodepods='kubectl get pods --sort-by="{.spec.nodeName}" -o custom-columns="NAME:.metadata.name,NODE:.spec.nodeName,NAMESPACE:.metadata.namespace"'
