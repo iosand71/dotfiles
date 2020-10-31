@@ -56,10 +56,12 @@ export KUBECONFIG=~/.kube/config-bene-eks:~/.kube/config-bene-prod-eks:$KUBECONF
 export KUBECONFIG=~/.kube/config-uca-eks:~/.kube/config-uca-prod-eks:$KUBECONFIG
 export KUBECONFIG=~/.kube/config-andie-eks:~/.kube/config-andie-prod-eks:$KUBECONFIG
 export KUBECONFIG=~/.kube/config-bap-eks:~/.kube/config-bap-prod-eks:$KUBECONFIG
+export KUBECONFIG=~/.kube/config-test-eks:$KUBECONFIG
 export LANG=it_IT.UTF-8
 export PAGER=bat
 export PATH=/usr/local/texlive/2015basic/bin/universal-darwin:$PATH
 export PATH=/usr/texbin:$PATH
+export PATH=/usr/local/opt/python@3.8/bin:$PATH
 export NVM_DIR="$HOME/.nvm" 
 . "/usr/local/opt/nvm/nvm.sh"
 unsetopt nomatch
