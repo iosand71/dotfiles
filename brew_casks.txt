@@ -1,11 +1,12 @@
-adoptopenjdk
 adoptopenjdk11
 adoptopenjdk8
 alacritty
 aws-vault
+gimp
 java
 julia
 qlmarkdown
 rectangle
 robo-3t
 visual-studio-code
+visualvm
