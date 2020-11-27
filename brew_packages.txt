@@ -28,7 +28,6 @@ gradle
 helm
 htop
 httpie
-jemalloc
 jenv
 jq
 kind

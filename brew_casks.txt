@@ -2,6 +2,7 @@ adoptopenjdk11
 adoptopenjdk8
 alacritty
 aws-vault
+clipy
 gimp
 java
 julia
