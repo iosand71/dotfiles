@@ -34,4 +34,5 @@ alias k9sr='k9s --readonly'
 alias sweissues='jira issue jql "project = \"Help me!\" AND status not in (Done, Rejected, Closed) AND type = \"Service Request\" AND Squad = \"R&D Software Engineering\""'
 alias jissue='jira issue'
 alias dockmvn='docker run --rm -e TESTCONTAINERS_RYUK_DISABLED=true -v "$HOME/.m2":/root/.m2 -v /var/run/docker.sock:/var/run/docker.sock -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.6.3-jdk-11'
+alias openports='lsof -iTCP -sTCP:LISTEN -n -P'
 function getcol() { awk "{print \$${1:-1}}"; }

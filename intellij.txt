@@ -1,0 +1,4 @@
+Themes: Cobalt 2
+Plugins: IdeaVim, Angular, Quarkus, Markdown, YAML, CSS, Freemarker, Git, EditoConfig
+
+
