@@ -5,6 +5,8 @@ source ~/.vimrc
 call plug#begin()
 " Use release branch (Recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'fatih/vim-go', {'do': ':GoUpdateBinaries'}
 call plug#end()
 
 " TextEdit might fail if hidden is not set.

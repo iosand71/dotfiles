@@ -46,25 +46,18 @@ fi
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export ANT_HOME=/Users/andrea.iosio/Java/ant
-export ANDROID_HOME=/Users/andrea.iosio/Unix/android
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:/snap/bin:$(go env GOPATH)/bin
+export PATH=~/.local/bin:/home/linuxbrew/.linuxbrew/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+export PATH=/snap/bin
+export PATH=~/.cargo/bin:$PATH
+export PATH=$PATH::$(go env GOPATH)/bin
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 #export LC_CTYPE=it_IT.UTF-8
 #export LC_ALL=it_IT.UTF-8
 export KUBECONFIG=~/.kube/config:~/.kube/config-shared-eks
 export LANG=it_IT.UTF-8
-export PATH=/usr/local/texlive/2015basic/bin/universal-darwin:$PATH
-export PATH=/usr/texbin:$PATH
-export PATH=~/.local/bin:$PATH
-export PATH=~/.cargo/bin:$PATH
 export NVM_DIR="$HOME/.nvm" 
 unsetopt nomatch
-# Jenv
-# eval "$(jenv init -)"
-# iTerm2 shell integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Vi mode indicator
 function zle-keymap-select zle-line-init
@@ -111,3 +104,6 @@ export SDKMAN_DIR="/home/andrea/.sdkman"
 [[ -s "/home/andrea/.sdkman/bin/sdkman-init.sh" ]] && source "/home/andrea/.sdkman/bin/sdkman-init.sh"
 
 source /home/andrea/.config/broot/launcher/bash/br
+# keymap
+setxkbmap us
+setxkbmap -variant altgr-intl
