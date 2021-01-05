@@ -47,9 +47,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=~/.local/bin:/home/linuxbrew/.linuxbrew/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
-export PATH=/snap/bin
+export PATH=$PATH:/snap/bin
 export PATH=~/.cargo/bin:$PATH
-export PATH=$PATH::$(go env GOPATH)/bin
+export PATH=$PATH:~/go/bin
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 #export LC_CTYPE=it_IT.UTF-8
