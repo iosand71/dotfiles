@@ -36,4 +36,5 @@ alias jissue='jira issue'
 alias dockmvn='docker run --rm -e TESTCONTAINERS_RYUK_DISABLED=true -v "$HOME/.m2":/root/.m2 -v /var/run/docker.sock:/var/run/docker.sock -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.6.3-jdk-11'
 alias openports='lsof -iTCP -sTCP:LISTEN -n -P'
 alias nowstoring='sudo fs_usage -w -f filesys mds_stores'
+alias cirunner='gitlab-runner exec docker --docker-volumes /var/run/docker.sock:/var/run/docker.sock --docker-volumes /dev/shm:/dev/shm  --docker-shm-size=0'
 function getcol() { awk "{print \$${1:-1}}"; }
