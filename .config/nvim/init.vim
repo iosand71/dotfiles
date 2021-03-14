@@ -9,6 +9,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'udalov/kotlin-vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'udalov/kotlin-vim'
+Plug 'liuchengxu/vim-which-key'
+Plug 'lmintmate/blue-mood-vim'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 " gruvbox color scheme
@@ -151,3 +154,5 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+" Which Key
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>

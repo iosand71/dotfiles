@@ -50,6 +50,7 @@ set noincsearch   " incremental searching
 set ignorecase  " searches are case insensitive...
 set smartcase   " ... unless they contain at least one capital letter
 set nocindent
+set splitright
 
 ""
 "" Wild settings
@@ -174,7 +175,7 @@ autocmd FileType python let b:dispatch = 'python3 %'
 
 "
 " notational fzf vim
-let g:nv_search_paths = ['~/Library/Application Support/Notational Data', '~/Dropbox/Notes', 'notes.md' ]
+let g:nv_search_paths = ['~/Documents/Notes', 'notes.md' ]
 let g:nv_default_extension = '.txt'
 nnoremap <silent> <c-f> :NV<CR>
 

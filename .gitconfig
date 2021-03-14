@@ -1,8 +1,8 @@
 [user]
 	name = Andrea Iosio
-	email = andrea.iosio@rgigroup.com
+	email = aiosio@gmail.com
 [core]
-	excludesfile = /Users/andrea.iosio/.gitignore_global
+	excludesfile = /Users/andreaiosio/.gitignore_global
 	autocrlf = input
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
@@ -13,6 +13,6 @@
 [push]
 	default = simple
 [commit]
-	template = /Users/andrea.iosio/.stCommitMsg
+	template = /Users/andreaiosio/.stCommitMsg
 [http]
 [credential]
