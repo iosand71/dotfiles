@@ -60,5 +60,7 @@
   ["⚗", "Experimenting new things"],
   ["🔍", "Improving SEO"],
   ["☸️", "Work about Kubernetes"],
-  ["🏷️", "Adding or updating types (Flow, TypeScript)"]
+  ["🏷️", "Adding or updating types (Flow, TypeScript)"],
+  ["🛂", "Work on code related to authorization, roles and permissions."],
+  ["💫", "Add or update animations and transitions."]
 ]
