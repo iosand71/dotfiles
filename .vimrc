@@ -191,6 +191,7 @@ nnoremap <F5> :UndotreeToggle<CR>
 nmap <leader>gh :diffget //2<CR>
 nmap <leader>gl :diffget //3<CR>
 nmap <leader>gs :G<CR>
+nmap <leader>gd :Gvdiff<cr>
 let g:lightline = {
                   \ 'active': {
                   \   'left': [ [ 'mode', 'paste' ],
@@ -206,7 +207,3 @@ let g:lightline = {
 :nnoremap <F7> "=strftime("%c")<CR>P
 :inoremap <F7> <C-R>=strftime("%c")<CR>
 :iab <expr> dts strftime("%c") " %d/%m/%y %H:%M:%S
-"
-" Alternative to pressing ESC
-"
-inoremap jj <ESC>

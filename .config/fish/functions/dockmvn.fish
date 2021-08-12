@@ -1,0 +1,3 @@
+function dockmvn --wraps='docker run --rm -e TESTCONTAINERS_RYUK_DISABLED=true -v "$HOME/.m2":/root/.m2 -v /var/run/docker.sock:/var/run/docker.sock -v "(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.6.3-jdk-11' --description 'alias dockmvn=docker run --rm -e TESTCONTAINERS_RYUK_DISABLED=true -v "$HOME/.m2":/root/.m2 -v /var/run/docker.sock:/var/run/docker.sock -v "(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.6.3-jdk-11'
+  docker run --rm -e TESTCONTAINERS_RYUK_DISABLED=true -v "$HOME/.m2":/root/.m2 -v /var/run/docker.sock:/var/run/docker.sock -v "(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.6.3-jdk-11 $argv; 
+end

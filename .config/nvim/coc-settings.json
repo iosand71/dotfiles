@@ -1,3 +1,4 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["css", "Markdown", "typescript", "typescriptreact"]
+  "coc.preferences.formatOnSaveFiletypes": ["css", "Markdown", "typescript", "typescriptreact"],
+  "diagnostic.displayByAle": true
 }

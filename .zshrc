@@ -1,11 +1,11 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+#ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="frisk"
+#ZSH_THEME="frisk"
 
 # Example aliases
 # alias zshconfig="vim ~/.zshrc"
@@ -32,11 +32,11 @@ source ~/.aliases
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx encode64 fasd vi-mode kube-ps1)
-if (( ! ${fpath[(I)/usr/local/share/zsh/site-functions]} )); then
-  FPATH=/usr/local/share/zsh/site-functions:$FPATH
-fi
-source $ZSH/oh-my-zsh.sh
+#pugins=(git osx encode64 fasd vi-mode kube-ps1)
+#if (( ! ${fpath[(I)/usr/local/share/zsh/site-functions]} )); then
+#  FPATH=/usr/local/share/zsh/site-functions:$FPATH
+#fi
+#source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export ANDROID_HOME=/Users/andreaiosio/Android
@@ -81,15 +81,15 @@ bindkey "^[[3~" delete-char
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
 # bindkey '^j' vi-cmd-mode
-bindkey -M viins jj vi-cmd-mode
+# bindkey -M viins jj vi-cmd-mode
 # 10ms for key sequences
-KEYTIMEOUT=100
+#KEYTIMEOUT=100
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_COMPLETION_TRIGGER='**'
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#export FZF_COMPLETION_TRIGGER='**'
 
 # Kubectl completion
-source <(kubectl completion zsh)
+#source <(kubectl completion zsh)
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/andreaiosio/.sdkman"

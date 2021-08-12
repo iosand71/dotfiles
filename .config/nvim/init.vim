@@ -5,6 +5,7 @@ source ~/.vimrc
 call plug#begin()
 " Use release branch (Recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dense-analysis/ale'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'liuchengxu/vim-which-key'
@@ -15,6 +16,7 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-lua/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'vim-test/vim-test'
 call plug#end()
 
 let g:coc_global_extensions = [
@@ -172,7 +174,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " Which Key
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 " Telescope
-nmap _ :Telescope find_files<CR>
+" nmap _ :Telescope find_files<CR>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
@@ -180,6 +182,24 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>j <cmd>Telescope symbols<cr>
 " Prettier
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+" Vim test
+nnoremap <leader>tn :TestNearest<CR>
+nnoremap <leader>tf :TestFile<CR>
+nnoremap <leader>ts :TestSuite<CR>
+nnoremap <leader>tl :TestLast<CR>
+nnoremap <leader>tg :TestVisit<CR>
+let test#strategy = {
+  \ 'nearest': 'neovim',
+  \ 'file':    'dispatch',
+\}
+" Vim terminal
+if has('nvim')
+  tmap <C-o> <C-\><C-n>
+endif
+
+
+" Ale / Coc interop
+let g:ale_disable_lsp = 1
 
 
 " Lua configs
@@ -199,3 +219,4 @@ require'nvim-treesitter.configs'.setup {
   }
 }
 EOF
+
