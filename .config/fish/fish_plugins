@@ -5,3 +5,4 @@ matchai/spacefish
 AbysmalBiscuit/fasd
 reitzig/sdkman-for-fish@v1.4.0
 evanlucas/fish-kubectl-completions
+jorgebucaran/autopair.fish
