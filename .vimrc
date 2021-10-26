@@ -176,7 +176,7 @@ autocmd FileType python let b:dispatch = 'python3 %'
 "
 " notational fzf vim
 let g:nv_search_paths = ['~/Documents/Notes', 'notes.md' ]
-let g:nv_default_extension = '.txt'
+let g:nv_default_extension = '.md'
 nnoremap <silent> <c-f> :NV<CR>
 
 "

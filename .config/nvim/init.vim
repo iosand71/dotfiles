@@ -17,6 +17,8 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-lua/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'vim-test/vim-test'
+" Plug 'chrisbra/csv.vim'
+Plug 'ggandor/lightspeed.nvim'
 call plug#end()
 
 let g:coc_global_extensions = [
