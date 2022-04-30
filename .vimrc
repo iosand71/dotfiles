@@ -159,7 +159,7 @@ nnoremap ' `
 nmap <Leader>e :e#<CR>
 
 " number and relative numbers
-set number relativenumber
+" set number relativenumber
 nnoremap <F6> :set number! relativenumber!<CR>
 
 " Emacs-like bindings in insert mode
@@ -169,9 +169,13 @@ imap <C-a> <C-o>0
 " Fast save
 nnoremap <Leader>z :w<CR>
 
+" select everything
+nnoremap <C-A> ggVG
+
 " Dispatch config
 autocmd FileType java let b:dispatch = 'javac %'
 autocmd FileType python let b:dispatch = 'python3 %'
+let g:dispatch_tmux_height = '50% -h'
 
 "
 " notational fzf vim
